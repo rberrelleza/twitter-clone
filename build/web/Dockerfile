@@ -5,7 +5,7 @@ WORKDIR /usr/src/web
 COPY package.json .
 COPY yarn.lock .
 
-RUN yarn
+RUN yarn install
 
 EXPOSE 3000
 
